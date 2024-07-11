@@ -84,12 +84,30 @@
             >;
         };
 
-        layer_6 {
+        Fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans    &trans    &trans
-                        &trans  &trans  &trans    &trans  &trans     &trans
+&trans  &kp F12  &kp F7  &kp F8     &kp F9     &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans    &trans
+                         &kp K_APP  &kp SPACE  &kp TAB            &trans  &trans     &trans
+            >;
+        };
+
+        AdditionalFeatures {
+            bindings = <
+&trans  &bootloader  &trans  &trans  &trans  &sys_reset    &sys_reset  &trans  &trans  &trans  &bootloader  &trans
+&trans  &trans       &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans  &trans       &trans
+&trans  &trans       &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans  &trans       &trans
+                             &trans  &trans  &trans        &trans      &trans  &trans
+            >;
+        };
+
+        Gaming {
+            bindings = <
+&trans  &trans  &trans  &kp W    &kp E      &kp R      &trans     &trans    &trans   &trans  &trans  &trans
+&trans  &trans  &kp A   &kp S    &kp D      &kp F      &trans     &trans    &trans   &trans  &trans  &trans
+&trans  &trans  &kp Z   &kp X    &kp C      &kp V      &kp I      &kp M     &trans   &trans  &trans  &trans
+                        &kp ESC  &kp SPACE  &kp TAB    &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
     };
